@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url(./sample.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50);
+  width: 100%;
+  padding: 0 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-form {
+  max-width: 550px;
+  margin: o auto;
+  background: white;
+  border-radius: 5;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0, 13);
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+  margin-top: auto;
+  margin-left: 4%;
+  margin-bottom: 10%;
+  background: transparent;
+}
+
+.input-fields .input {
+  height: 20px;
+  margin: 10px 0;
+  background: transparent;
+  border-bottom: 2px solid grey;
+}
+
+::-webkit-input-placeholder {
+  color: blue;
+}
+
+::-moz-input-placeholder {
+  color: blue;
+}
+
+::-ms-input-placeholder {
+  color: blue;
+}
+
+.btn {
+  background: blue;
+  border-radius: 10px;
   color: white;
+  height: 40px;
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  cursor: pointer;
+  color: black;
+  background: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 600px) {
+  .contact-form {
+    flex: column;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.the-label {
+  color: blue;
+  font-weight: 700;
 }
